@@ -1,0 +1,37 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+    background-image: url(background/neon-background.jpg);
+}
+
+.clock{
+    border: 15px solid hsl(0, 0%, 80%);
+    height: 18rem;
+    width: 18rem;
+    border-radius: 50%;
+    position: relative;
+}
+
+.hand{
+    height: 45%;
+    width: 4px;
+    background-color: hsl(0, 0%, 80%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform-origin: 50% 0%;
+    transform: rotate(180deg);
+    transition: all 0.05s;
+    transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+}
+
+.hand-sec{
+    background-color: red;
+}
+
+.hand-hours{
+    height: 35%;
+}
